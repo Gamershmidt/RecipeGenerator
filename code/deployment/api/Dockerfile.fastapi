@@ -1,0 +1,30 @@
+# Use an official Python runtime as a parent image
+FROM python:3.10-slim
+
+# Set the working directory in the container to /app
+WORKDIR /app
+
+# Copy the FastAPI requirements file into the container at /app
+COPY code/deployment/api/requirements.txt .
+
+# Install any needed packages specified in requirements.txt
+RUN pip install fastapi uvicorn pydantic
+COPY code/deployment/api/requirements.txt .
+
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+# Copy the entire project into the container at /app
+COPY . .
+# Copy the dataset specifically (optional)
+COPY code/datasets/Symptom2Disease.csv code/datasets/
+
+# Install NLTK data
+RUN python -m nltk.downloader stopwords
+# Expose port 8000 for FastAPI
+EXPOSE 8000
+
+# Set the PYTHONPATH environment variable to include /app
+ENV PYTHONPATH="/app"
+
+# Run the application
+CMD ["uvicorn", "code.deployment.api.app:app", "--host", "0.0.0.0", "--port", "8000"]
