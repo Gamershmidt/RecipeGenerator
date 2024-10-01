@@ -14,7 +14,7 @@ default_args = {
 
 # Define the DAG (schedule_interval is set to every 5 minutes)
 dag = DAG(
-    'Advc',
+    'Adbvc',
     default_args=default_args,
     description='A pipeline that preprocesses data, trains a model, and deploys it.',
     schedule_interval='*/5 * * * *',  # This schedules the DAG to run every 5 minutes
@@ -28,32 +28,39 @@ with dag:
     # Task 1: Pull the latest versioned data from DVC storage
     dvc_pull = BashOperator(
         task_id='dvc_pull',
-        bash_command='cd /home/sofia/Документы/Symptom2Disease && dvc pull'
+        bash_command='cd /path/to/your/dvc && dvc pull'
     )
 
     # Task 2: Run the data pipeline (reproduce the DVC pipeline stages)
     dvc_repro = BashOperator(
         task_id='dvc_repro',
-        bash_command='cd /home/sofia/Документы/Symptom2Disease && dvc repro'
+        bash_command='cd /path/to/your/dvc && dvc repro'
     )
 
     # Task 3: Push the results to the DVC remote storage
     dvc_push = BashOperator(
         task_id='dvc_push',
-        bash_command='cd /home/sofia/Документы/Symptom2Disease && dvc push'
+        bash_command='cd /path/to/your/dvc && dvc push'
     )
 
     # Task 4: Model Training - runs the model training script
     train_model = BashOperator(
         task_id='train_model',
-        bash_command="python /home/sofia/Документы/Symptom2Disease/code/models/training.py",
+        bash_command="python /path/to/your/project/code/models/model_training.py",
     )
 
     # Task 5: Build and Deploy Docker Container - builds the Docker image using docker-compose
     deploy_model = BashOperator(
         task_id='deploy_model',
-        bash_command='docker-compose -f /home/sofia/Документы/Symptom2Disease/docker-compose.yml up --build',
+        bash_command='docker-compose -f /path/to/your/project/docker-compose.yml up --build',
     )
 
+    start_mlflow_ui = BashOperator(
+        task_id='start_mlflow_ui',
+        bash_command='mlflow ui --host 0.0.0.0 --port 5000 &',  # Run in the background
+        dag=dag,
+    )
+
+
     # Set task dependencies: dvc pipeline -> training -> deployment
-    dvc_pull >> dvc_repro >> dvc_push >> train_model >> deploy_model
+    dvc_pull >> dvc_repro >> dvc_push >> start_mlflow_ui >> train_model >> deploy_model
