@@ -57,9 +57,9 @@ def save_data(train_df, test_df, train_filepath, test_filepath):
 
 def main():
     # File paths
-    raw_data_path = '/home/sofia/Документы/Symptom2Disease/data/raw/Symptom2Disease.csv'
-    train_data_path = '/home/sofia/Документы/Symptom2Disease/data/processed/train.csv'
-    test_data_path = '/home/sofia/Документы/Symptom2Disease/data/processed/test.csv'
+    raw_data_path = '/path/to/your/project/data/raw/Symptom2Disease.csv'
+    train_data_path = '/path/to/your/project/data/processed/train.csv'
+    test_data_path = '/path/to/your/project/data/processed/test.csv'
 
     # Load the raw data
     data = load_data(raw_data_path)
