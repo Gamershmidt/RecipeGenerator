@@ -1,9 +1,5 @@
-[2024-10-01 18:10:55 +0300] [14860] [INFO] Starting gunicorn 23.0.0
-[2024-10-01 18:10:55 +0300] [14860] [INFO] Listening at: http://[::]:8794 (14860)
-[2024-10-01 18:10:55 +0300] [14860] [INFO] Using worker: sync
-[2024-10-01 18:10:55 +0300] [14861] [INFO] Booting worker with pid: 14861
-[2024-10-01 18:10:55 +0300] [14862] [INFO] Booting worker with pid: 14862
-[2024-10-01 18:17:56 +0300] [14860] [INFO] Handling signal: term
-[2024-10-01 18:17:56 +0300] [14862] [INFO] Worker exiting (pid: 14862)
-[2024-10-01 18:17:56 +0300] [14861] [INFO] Worker exiting (pid: 14861)
-[2024-10-01 18:17:56 +0300] [14860] [INFO] Shutting down: Master
+[2024-10-01 20:57:12 +0300] [142372] [INFO] Starting gunicorn 23.0.0
+[2024-10-01 20:57:12 +0300] [142372] [INFO] Listening at: http://[::]:8794 (142372)
+[2024-10-01 20:57:12 +0300] [142372] [INFO] Using worker: sync
+[2024-10-01 20:57:12 +0300] [142373] [INFO] Booting worker with pid: 142373
+[2024-10-01 20:57:12 +0300] [142375] [INFO] Booting worker with pid: 142375

@@ -1,12 +1,71 @@
-[2024-10-01T18:10:55.687+0300] {triggerer_job_runner.py:181} INFO - Setting up TriggererHandlerWrapper with handler <FileTaskHandler (NOTSET)>
-[2024-10-01T18:10:55.688+0300] {triggerer_job_runner.py:237} INFO - Setting up logging queue listener with handlers [<RedirectStdHandler <stdout> (NOTSET)>, <NonCachingFileHandler /home/sofia/Документы/Symptom2Disease/services/airflow/logs/triggerer.log (NOTSET)>, <TriggererHandlerWrapper (NOTSET)>]
-[2024-10-01T18:10:55.694+0300] {triggerer_job_runner.py:338} INFO - Starting the triggerer
-[2024-10-01T18:11:55.751+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
-[2024-10-01T18:12:55.804+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
-[2024-10-01T18:13:55.859+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
-[2024-10-01T18:14:55.909+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
-[2024-10-01T18:15:55.960+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
-[2024-10-01T18:16:56.013+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
-[2024-10-01T18:17:55.665+0300] {triggerer_job_runner.py:351} INFO - Waiting for triggers to clean up
-[2024-10-01T18:17:56.072+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
-[2024-10-01T18:17:56.074+0300] {triggerer_job_runner.py:357} INFO - Exited trigger loop
+[2024-10-01T20:57:13.122+0300] {triggerer_job_runner.py:181} INFO - Setting up TriggererHandlerWrapper with handler <FileTaskHandler (NOTSET)>
+[2024-10-01T20:57:13.123+0300] {triggerer_job_runner.py:237} INFO - Setting up logging queue listener with handlers [<RedirectStdHandler <stdout> (NOTSET)>, <NonCachingFileHandler /home/sofia/Документы/Symptom2Disease/services/airflow/logs/triggerer.log (NOTSET)>, <TriggererHandlerWrapper (NOTSET)>]
+[2024-10-01T20:57:13.134+0300] {triggerer_job_runner.py:338} INFO - Starting the triggerer
+[2024-10-01T20:58:13.192+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T20:59:13.243+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:00:13.294+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:01:13.330+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:02:13.376+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:03:13.428+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:04:13.482+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:05:13.534+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:06:13.579+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:07:13.633+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:08:13.693+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:09:13.735+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:10:13.770+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:11:13.825+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:12:13.885+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:13:13.942+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:14:14.000+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:15:14.060+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:16:14.116+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:17:14.178+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:18:14.229+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:19:14.272+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:20:14.322+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:21:14.370+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:22:14.416+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:23:14.469+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:24:14.522+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:25:14.577+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:26:14.638+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:27:14.695+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:28:14.751+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:29:14.804+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:30:14.853+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:31:14.907+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:32:14.960+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:33:15.006+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:34:15.055+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:35:15.111+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:36:15.172+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:37:15.230+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:38:15.274+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:39:15.323+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:40:15.376+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:41:15.425+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:42:15.481+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:43:15.539+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:44:15.590+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:45:15.644+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:46:15.680+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:47:15.720+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:48:15.786+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:49:15.837+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:50:15.878+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:51:15.928+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:52:15.981+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:53:16.034+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:54:16.092+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:55:16.142+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:56:16.197+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:57:16.241+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:58:16.280+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T21:59:16.331+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T22:00:16.384+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T22:01:16.435+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T22:02:16.490+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T22:03:16.550+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T22:04:16.609+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T22:05:16.660+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running

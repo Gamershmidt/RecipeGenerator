@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 from airflow import DAG
-from airflow.operators.bash import BashOperator  # Updated import for BashOperator
+from airflow.operators.bash import BashOperator
 
 # Define default arguments for the DAG
 default_args = {
@@ -14,7 +14,7 @@ default_args = {
 
 # Define the DAG (schedule_interval is set to every 5 minutes)
 dag = DAG(
-    'amlopspmdl',
+    'Symptom2disease',
     default_args=default_args,
     description='A pipeline that preprocesses data, trains a model, and deploys it.',
     schedule_interval='*/5 * * * *',  # This schedules the DAG to run every 5 minutes
@@ -25,21 +25,21 @@ dag = DAG(
 # Task 1: Data Preprocessing - runs the data preprocessing script
 preprocess_data = BashOperator(
     task_id='preprocess_data',
-    bash_command='/usr/bin/python3 /home/sofia/Documents/Symptom2Disease/code/datasets/data_processing.py',  # Updated to ASCII path
+    bash_command='python /home/sofia/Документы/Symptom2Disease/code/datasets/data_processing.py',
     dag=dag,
 )
 
 # Task 2: Model Training - runs the model training script
 train_model = BashOperator(
     task_id='train_model',
-    bash_command='/usr/bin/python3 /home/sofia/Documents/Symptom2Disease/code/models/model_training.py',  # Updated to ASCII path
+    bash_command="python /home/sofia/Документы/Symptom2Disease/code/models/training.py",
     dag=dag,
 )
 
 # Task 3: Build and Deploy Docker Container - builds the Docker image using docker-compose
 deploy_model = BashOperator(
     task_id='deploy_model',
-    bash_command='/usr/local/bin/docker-compose -f /home/sofia/Documents/Symptom2Disease/docker-compose.yml up --build -d',  # Updated to ASCII path and full docker-compose path
+    bash_command='docker-compose -f /home/sofia/Документы/Symptom2Disease/docker-compose.yml up --build',
     dag=dag,
 )
 
