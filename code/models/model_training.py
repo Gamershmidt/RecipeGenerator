@@ -18,10 +18,10 @@ from sklearn.model_selection import train_test_split
 mlflow.set_tracking_uri("http://localhost:5000")
 mlflow.set_experiment("symptom2disease")
 # Load Data
-train = pd.read_csv("/home/sofia/Документы/Symptom2Disease/data/processed/train.csv")
+train = pd.read_csv("/path/to/your/project/data/processed/train.csv")
 X_train = train['text']
 y_train = train['label']
-test = pd.read_csv("/home/sofia/Документы/Symptom2Disease/data/processed/test.csv")
+test = pd.read_csv("/path/to/your/project/data/processed/test.csv")
 X_test = test['text']
 y_test = test['label']
 
@@ -188,7 +188,7 @@ model_lstm = RNNModel(vocab_size, emb_dim, hidden_dim, num_classes, drop_prob, n
 train(model_lstm,epochs)
 
 # Save the Model
-model_save_path = "/home/sofia/Документы/Symptom2Disease/models/model_lstm.h5"
+model_save_path = "/path/to/your/project/models/model_lstm.h5"
 torch.save(model_lstm.state_dict(), model_save_path)
 
 print(f"Model saved at {model_save_path}")
