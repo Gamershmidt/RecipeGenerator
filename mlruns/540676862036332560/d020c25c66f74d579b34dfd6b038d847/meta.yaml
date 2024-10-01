@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/540676862036332560/d020c25c66f74d579b34dfd6b038d847/artifacts
+end_time: 1727623222724
+entry_point_name: ''
+experiment_id: '540676862036332560'
+lifecycle_stage: active
+run_id: d020c25c66f74d579b34dfd6b038d847
+run_name: trusting-crab-917
+run_uuid: d020c25c66f74d579b34dfd6b038d847
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1727623156732
+status: 3
+tags: []
+user_id: sofia

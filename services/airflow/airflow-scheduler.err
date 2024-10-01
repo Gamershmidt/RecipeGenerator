@@ -1,0 +1,9 @@
+[2024-10-01 18:00:38 +0300] [13080] [INFO] Starting gunicorn 23.0.0
+[2024-10-01 18:00:38 +0300] [13080] [INFO] Listening at: http://[::]:8793 (13080)
+[2024-10-01 18:00:38 +0300] [13080] [INFO] Using worker: sync
+[2024-10-01 18:00:38 +0300] [13081] [INFO] Booting worker with pid: 13081
+[2024-10-01 18:00:38 +0300] [13084] [INFO] Booting worker with pid: 13084
+[2024-10-01 18:18:59 +0300] [13080] [INFO] Handling signal: term
+[2024-10-01 18:18:59 +0300] [13081] [INFO] Worker exiting (pid: 13081)
+[2024-10-01 18:18:59 +0300] [13084] [INFO] Worker exiting (pid: 13084)
+[2024-10-01 18:18:59 +0300] [13080] [INFO] Shutting down: Master

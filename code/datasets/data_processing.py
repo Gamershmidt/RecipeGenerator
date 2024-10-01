@@ -1,15 +1,10 @@
 # Import Necessary Libraries
 import string
-from collections import Counter
 import pandas as pd
-import numpy as np
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 
-import torch
-import torch.nn as nn
-import torchtext
-from torch.utils.data import Dataset, DataLoader
+
 from sklearn.model_selection import train_test_split
 
 

@@ -1,0 +1,15 @@
+2024-09-29 19:06:20,788 WARNING - Could not import pandas. Holidays will not be considered.
+2024-09-29 19:06:20,789 INFO - Loaded executor: SequentialExecutor
+2024-09-29 19:06:20,811 INFO - Starting the scheduler
+2024-09-29 19:06:20,811 INFO - Processing each file at most -1 times
+2024-09-29 19:06:20,815 INFO - Launched DagFileProcessorManager with pid: 198988
+2024-09-29 19:06:20,816 INFO - Adopting or resetting orphaned tasks for active dag runs
+2024-09-29 19:06:20,817 INFO - Configured default timezone UTC
+2024-09-29 19:07:19,808 INFO - Exiting gracefully upon receiving signal 15
+2024-09-29 19:07:20,815 INFO - Sending 15 to group 198988. PIDs of all processes in the group: [198988]
+2024-09-29 19:07:20,815 INFO - Sending the signal 15 to group 198988
+2024-09-29 19:07:20,908 INFO - Process psutil.Process(pid=198988, status='terminated', exitcode=0, started='19:06:20') (198988) terminated with exit code 0
+2024-09-29 19:07:20,917 INFO - Sending 15 to group 198988. PIDs of all processes in the group: []
+2024-09-29 19:07:20,917 INFO - Sending the signal 15 to group 198988
+2024-09-29 19:07:20,918 INFO - Sending the signal 15 to process 198988 as process group is missing.
+2024-09-29 19:07:20,918 INFO - Exited execute loop

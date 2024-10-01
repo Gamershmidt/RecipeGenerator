@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/540676862036332560/bd089a36d5c542f8834754e6effeb4eb/artifacts
+end_time: 1727622990323
+entry_point_name: ''
+experiment_id: '540676862036332560'
+lifecycle_stage: active
+run_id: bd089a36d5c542f8834754e6effeb4eb
+run_name: flawless-dog-201
+run_uuid: bd089a36d5c542f8834754e6effeb4eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1727622982221
+status: 3
+tags: []
+user_id: sofia

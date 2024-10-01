@@ -1,0 +1,12 @@
+[2024-10-01T18:10:55.687+0300] {triggerer_job_runner.py:181} INFO - Setting up TriggererHandlerWrapper with handler <FileTaskHandler (NOTSET)>
+[2024-10-01T18:10:55.688+0300] {triggerer_job_runner.py:237} INFO - Setting up logging queue listener with handlers [<RedirectStdHandler <stdout> (NOTSET)>, <NonCachingFileHandler /home/sofia/Документы/Symptom2Disease/services/airflow/logs/triggerer.log (NOTSET)>, <TriggererHandlerWrapper (NOTSET)>]
+[2024-10-01T18:10:55.694+0300] {triggerer_job_runner.py:338} INFO - Starting the triggerer
+[2024-10-01T18:11:55.751+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T18:12:55.804+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T18:13:55.859+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T18:14:55.909+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T18:15:55.960+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T18:16:56.013+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T18:17:55.665+0300] {triggerer_job_runner.py:351} INFO - Waiting for triggers to clean up
+[2024-10-01T18:17:56.072+0300] {triggerer_job_runner.py:510} INFO - 0 triggers currently running
+[2024-10-01T18:17:56.074+0300] {triggerer_job_runner.py:357} INFO - Exited trigger loop
