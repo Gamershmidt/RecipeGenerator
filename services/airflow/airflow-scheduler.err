@@ -1,0 +1,5 @@
+[2024-10-01 21:53:55 +0300] [971705] [INFO] Starting gunicorn 23.0.0
+[2024-10-01 21:53:55 +0300] [971705] [INFO] Listening at: http://[::]:8793 (971705)
+[2024-10-01 21:53:55 +0300] [971705] [INFO] Using worker: sync
+[2024-10-01 21:53:55 +0300] [971706] [INFO] Booting worker with pid: 971706
+[2024-10-01 21:53:55 +0300] [971708] [INFO] Booting worker with pid: 971708

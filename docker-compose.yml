@@ -1,20 +1,34 @@
-version: '3.8'
-
+version: '3'
 services:
   fastapi:
     build:
       context: .
-      dockerfile: Dockerfile.fastapi
+      dockerfile: code/deployment/api/Dockerfile.fastapi
+    container_name: fastapi_app
+    volumes:
+      - ./code/datasets:/app/code/datasets
+      - ./models/model_lstm.h5:/app/models/model_lstm.h5
     ports:
       - "8000:8000"
     environment:
       - PYTHONPATH=/app
+    networks:
+      - app-network
 
   streamlit:
     build:
       context: .
-      dockerfile: Dockerfile.streamlit
+      dockerfile: code/deployment/app/Dockerfile.streamlit
+    container_name: streamlit_app
     ports:
       - "8501:8501"
     environment:
-      - PYTHONPATH=/app"
+      - PYTHONPATH=/app
+    depends_on:
+      - fastapi
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

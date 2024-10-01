@@ -1,0 +1,9 @@
+stages:
+  preprocess:
+    cmd: python code/datasets/data_processing.py
+    deps:
+      - code/datasets/data_processing.py
+      - data/raw/Symptom2Disease.csv
+    outs:
+      - data/processed/train.csv
+      - data/processed/test.csv
