@@ -3,7 +3,7 @@ import os
 import torch
 from pydantic import BaseModel
 sys.path.append(os.path.abspath(os.path.join(os.pardir, os.pardir)))
-sys.path.append("/home/sofia/Документы/Symptom2Disease")
+sys.path.append("/path/to/your/project")
 
 from code.models.model import RNNModel, make_pred
 
@@ -12,7 +12,6 @@ from fastapi import FastAPI
 
 
 model = RNNModel(num_layers=3,bidir=True, seq="lstm")
-# model.load_state_dict(torch.load("/home/sofia/Документы/Symptom2Disease/models/model_lstm.h5"), map_location=torch.device('cpu'), strict=False)
 model.load_state_dict(torch.load("models/model_lstm.h5", map_location=torch.device('cpu')), strict=False)
 
 #
